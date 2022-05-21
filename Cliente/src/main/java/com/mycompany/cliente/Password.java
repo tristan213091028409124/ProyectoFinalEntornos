@@ -15,14 +15,14 @@ public class Password {
         this.password = p;
     }
     
-    public String compruebaPassword(String p){
-        if (p.length() < 8){
+    public String compruebaPassword(){
+        if (password.length() < 8){
             return "Debil";
         }
-        if(p.matches("[a-zA-Z]+")){
+        if(password.matches("[a-zA-Z]+")){
             return "Medio";
         }
-        if(p.matches("[a-zA-Z0-9]+")){
+        if(password.matches("[a-zA-Z0-9]+")){
             return "Medio fuerte";
         }
         return "Fuerte";        
