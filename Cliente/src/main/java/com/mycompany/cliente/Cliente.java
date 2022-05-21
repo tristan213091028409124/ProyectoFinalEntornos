@@ -11,8 +11,10 @@ import java.util.Date;
 public class Cliente {
 
     public static void main(String[] args) {
-        Date d = new Date("12-02-1990");
+        Date d = new Date(1999, 02, 20);
         Password p = new Password("abc109---");
-        new Usuario("Tristan",p , d);
+        Usuario usuario = new Usuario("Tristan",p , d);
+        
+        
     }
 }
