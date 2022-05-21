@@ -11,9 +11,11 @@ import java.util.Date;
 public class Cliente {
 
     public static void main(String[] args) {
-        Date d = new Date(1999, 02, 20);
+        Date d = new Date(2000, 02, 20);
         Password p = new Password("abc109---");
         Usuario usuario = new Usuario("Tristan",p , d);
+        
+        System.out.println("Edad "+ usuario.calculaEdad(d));
         
         
     }
