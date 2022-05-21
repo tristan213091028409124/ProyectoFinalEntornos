@@ -5,10 +5,14 @@
 
 package com.mycompany.cliente;
 
+import java.util.Date;
+
 
 public class Cliente {
 
     public static void main(String[] args) {
-        
+        Date d = new Date("12-02-1990");
+        Password p = new Password("abc109---");
+        new Usuario("Tristan",p , d);
     }
 }
